@@ -5,9 +5,9 @@ public static void main(String[] a)
 {
 char c1=(a[0]).charAt(0);
 
-if((c1<='z'&&c1>='a')||(c1<='A'&&c1<='Z'))
+if(Character.isLetter(c1))
 System.out.println("Alphabet");
-else if(c1<='9' && c1>='0')
+else if(Character.isDigit(c1))
 System.out.println("Number");
 else
 System.out.println("Special Character");
