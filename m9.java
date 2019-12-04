@@ -2,6 +2,8 @@ class m9
 {
 public static void main(String[] a)
 {
+if(a.length==1)
+{
 int n=Integer.parseInt(a[0]);
 switch(n)
 {
@@ -19,5 +21,8 @@ case 11:System.out.println("Month : November");break;
 case 12:System.out.println("Month : December");break;
 default:System.out.println("Invalid Month");break;
 }
+}
+else
+System.out.println("Please enter month in numbers");
 }
 }
